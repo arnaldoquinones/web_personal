@@ -6,24 +6,23 @@ import fastapi as fastAPI
 
 # --- PAGE SETUP ---
 main_page = st.Page(
-    r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\views\main_page.py",
+    r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\main_page.py",
     title="Main.",
+    icon="❤️",
+)
+about_page = st.Page(
+    r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\sobre_nosotros.py",
+    title="Quienes somos.",
     icon="❤️",
     default=True,
 )
-about_page = st.Page(
-    r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\views\sobre_nosotros.py",
-    title="Quienes somos.",
-    icon="❤️",
-    
-)
 project_1_page = st.Page(
-    r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\views\dashboard_ventas.py",
+    r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\dashboard_ventas.py",
     title="Dashboard de ventas.",
     icon="❤️",
 )
 project_2_page = st.Page(
-    r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\views\chatbot.py",
+    r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\chatbot.py",
     title="Chat Bot.",
     icon="❤️",
 )
@@ -38,8 +37,8 @@ pg = st.navigation(
 
 
 # --- SHARED ON ALL PAGES ---
-st.logo(r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\images\mj.jpg")
-st.sidebar.markdown("Made with ❤️ by [Arnaldo](https://github.com/arnaldoquinones)")
+st.logo(r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\images\galactica.ico")
+st.sidebar.markdown("Made with ❤️ by [Arnaldo](https://youtube.com/@codingisfun)")
 
 
 # --- RUN NAVIGATION ---
