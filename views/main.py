@@ -9,12 +9,13 @@ main_page = st.Page(
     r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\main_page.py",
     title="Main.",
     icon="❤️",
+    default=True,
 )
 about_page = st.Page(
     r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\sobre_nosotros.py",
     title="Quienes somos.",
     icon="❤️",
-    default=True,
+    
 )
 project_1_page = st.Page(
     r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\dashboard_ventas.py",
