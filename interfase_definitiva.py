@@ -2,11 +2,6 @@
 import streamlit as st
 import fastapi as fastAPI
 
-# -- PAGE SETUP --
-st.set_page_config(
-    page_title="Mi Aplicación",  # Título de la página que debería aparecer en la pestaña del navegador
-    page_icon=r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\galactica.ico"  # Ruta completa al ícono
-)
 # --- PAGE SETUP ---
 about_page = st.Page(
     r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\sobre_nosotros.py",
@@ -24,3 +19,20 @@ project_2_page = st.Page(
     title="Chat Bot",
     icon="🖤",
 )
+
+# --- NAVIGATION SETUP [WITH SECTIONS]---
+pg = st.navigation(
+    {
+        "Info": [about_page],
+        "Projects": [project_1_page, project_2_page],
+    }
+)
+
+
+# --- SHARED ON ALL PAGES ---
+st.logo(r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\galactica.ico")
+st.sidebar.markdown("Made with ❤️ by [Sven](https://youtube.com/@codingisfun)")
+
+
+# --- RUN NAVIGATION ---
+pg.run()
