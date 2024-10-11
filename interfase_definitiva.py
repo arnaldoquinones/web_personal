@@ -9,18 +9,18 @@ st.set_page_config(
 )
 # --- PAGE SETUP ---
 about_page = st.Page(
-    "views/about_me.py",
+    r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\sobre_nosotros.py",
     title="About Me",
-    icon=":material/account_circle:",
+    icon="🖤",
     default=True,
 )
 project_1_page = st.Page(
-    "views/sales_dashboard.py",
+    r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\dashboard_ventas.py",
     title="Sales Dashboard",
-    icon=":material/bar_chart:",
+    icon="🖤",
 )
 project_2_page = st.Page(
-    "views/chatbot.py",
+    r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\chatbot.py",
     title="Chat Bot",
-    icon=":material/smart_toy:",
+    icon="🖤",
 )
