@@ -25,13 +25,20 @@ with col1:
 with col2:
         st.title("Arnaldo Quiñones", anchor=False)
         st.write("Con más de 24 años de experiencia en el Banco ICBC, he desempeñado roles tanto en el área administrativa como en el comercial.")
-        if st.button("Contactame"):
+        if st.button("📧 Contactame"):
                 show_contact_form()
         
 # --- EXPERIENCIA Y CALIFICACIONES ---
 
 st.write("\n")
-st.subheader("Hard skills.")
+st.write("\n")
+st.write("\n")
+st.write("\n")
+st.write("\n")
+st.write("\n")
+st.write("\n")
+st.subheader("Experiencia y calificaciones.")
+
 st.write(
       """
 - Experiencia en análisis de datos financieros: Más de 24 años en el Banco ICBC como Data Analyst, manejando información crítica.
@@ -44,8 +51,7 @@ st.write(
 """
 )
 
-st.write("\n")
-st.subheader("Experiencia y calificaciones.")
+st.subheader("Hard skills.")
 st.write(
       """
 - Lenguajes de programación: Experto en Python con más de 12 años de experiencia.

@@ -13,13 +13,13 @@ r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\vi
 )
 about_page = st.Page(
     r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\views\sobre_nosotros.py",
-    title="Quienes somos.",
+    title="Resumen curricular.",
     icon="🌟",
     
 )
 project_1_page = st.Page(
     r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\views\dashboard_ventas.py",
-    title="Dashboard de ventas.",
+    title="Catalogo de implementaciones.",
     icon="🌟",
 )
 project_2_page = st.Page(
@@ -32,7 +32,7 @@ project_2_page = st.Page(
 pg = st.navigation(
     {
         "Info": [main_page],
-        "Projects": [project_1_page, project_2_page,about_page],
+        "Projects": [about_page, project_1_page, project_2_page],
     }
 )
 
