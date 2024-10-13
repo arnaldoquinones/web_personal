@@ -39,7 +39,7 @@ pg = st.navigation(
 
 # --- SHARED ON ALL PAGES ---
 st.logo(r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\images\mj.jpg")
-st.sidebar.markdown("Made by [Arnaldo Quiñones](https://youtube.com/@codingisfun)")
+st.sidebar.markdown("Made by [Arnaldo Quiñones.](https://github.com/arnaldoquinones)")
 
 
 # --- RUN NAVIGATION ---
