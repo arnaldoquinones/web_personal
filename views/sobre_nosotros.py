@@ -1,19 +1,61 @@
 # sobre_nosotros.
-
+import requests
+import re
 import streamlit as st
+
+# --- POP UP WINDOW ---
+
+WEBHOOK_URL = "https://hooks.pabbly.com/api/webhook/670c56b88df01fec66f88c3f"
+
+
+# --- Basic regex pattern for email validation ---
+def is_valid_email(email):
+    email_pattern = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+    return re.match(email_pattern, email) is not None
 
 @st.dialog("Contactame")
 def show_contact_form():
     with st.form("contact_form"):
-        first_name = st.text_input("First name")
-        last_name = st.text_input("Last name")
+        first_name = st.text_input("Nombre")
+        last_name = st.text_input("Apellido")
         email = st.text_input("Email")
-        message = st.text_area("Your message")
+        message = st.text_area("Mensaje")
         
         submit_button = st.form_submit_button("Submit")
         
         if submit_button:
-            st.success("Message succesfully sent!   🚀")
+                if not WEBHOOK_URL:
+                    st.error("Email service is not set up. Please try again later.", icon="📧")
+                    st.stop()
+
+                if not first_name:
+                    st.error("Please provide your name.", icon="🧑")
+                    st.stop()
+
+                if not last_name:
+                    st.error("Please provide your last name.", icon="🧑")
+                    st.stop() 
+
+                if not email:
+                    st.error("Please provide your email address.", icon="📨")
+                    st.stop()
+
+                if not is_valid_email(email):
+                    st.error("Please provide a valid email address.", icon="📧")
+                    st.stop()
+
+                if not message:
+                    st.error("Please provide a message.", icon="💬")
+                    st.stop()
+
+                # Prepare the data payload and send it to the specified webhook URL
+                data = {"email": email, "name": first_name, "message": message}
+                response = requests.post(WEBHOOK_URL, json=data)
+
+                if response.status_code == 200:
+                    st.success("Your message has been sent successfully! 🎉", icon="🚀")
+                else:
+                    st.error("There was an error sending your message.", icon="😨")
             
 
 # --- PRINCIPAL ---
