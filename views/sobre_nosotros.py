@@ -8,7 +8,8 @@ import streamlit as st
 WEBHOOK_URL = "https://hooks.pabbly.com/api/webhook/670c56b88df01fec66f88c3f"
 
 
-# --- Basic regex pattern for email validation ---
+
+# --- Codigo validacion de mail ---
 def is_valid_email(email):
     email_pattern = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
     return re.match(email_pattern, email) is not None
@@ -24,38 +25,46 @@ def show_contact_form():
         submit_button = st.form_submit_button("Submit")
         
         if submit_button:
-                if not WEBHOOK_URL:
-                    st.error("Email service is not set up. Please try again later.", icon="📧")
-                    st.stop()
+            if not WEBHOOK_URL:
+                st.error("El servicio de correo no está configurado. Por favor, inténtalo de nuevo más tarde.", icon="📧")
+                st.stop()
 
-                if not first_name:
-                    st.error("Please provide your name.", icon="🧑")
-                    st.stop()
+            if not first_name:
+                st.error("Por favor, proporciona tu nombre.", icon="🧑")
+                st.stop()
 
-                if not last_name:
-                    st.error("Please provide your last name.", icon="🧑")
-                    st.stop() 
+            if not last_name:
+                st.error("Por favor, proporciona tu apellido.", icon="🧑")
+                st.stop() 
 
-                if not email:
-                    st.error("Please provide your email address.", icon="📨")
-                    st.stop()
+            if not email:
+                st.error("Por favor, proporciona tu dirección de correo electrónico.", icon="📨")
+                st.stop()
 
-                if not is_valid_email(email):
-                    st.error("Please provide a valid email address.", icon="📧")
-                    st.stop()
+            if not is_valid_email(email):
+                st.error("Por favor, proporciona una dirección de correo electrónico válida.", icon="📧")
+                st.stop()
 
-                if not message:
-                    st.error("Please provide a message.", icon="💬")
-                    st.stop()
+            if not message:
+                st.error("Por favor, proporciona un mensaje.", icon="💬")
+                st.stop()
 
-                # Prepare the data payload and send it to the specified webhook URL
-                data = {"email": email, "name": first_name, "message": message}
-                response = requests.post(WEBHOOK_URL, json=data)
+            # Prepare the data payload and send it to the specified webhook URL
+            data = {"email": email, "name": first_name, "message": message}
+            response = requests.post(WEBHOOK_URL, json=data)
 
-                if response.status_code == 200:
-                    st.success("Your message has been sent successfully! 🎉", icon="🚀")
-                else:
-                    st.error("There was an error sending your message.", icon="😨")
+            if response.status_code == 200:
+                st.success("¡Tu mensaje se ha enviado correctamente! 🎉", icon="🚀")
+                # reset_form()
+            else:
+                st.error("Hubo un error al enviar tu mensaje.", icon="😨")
+                # reset_form()
+
+            # Restablecer los campos
+            first_name = ""
+            last_name = ""
+            email = ""
+            message = ""
             
 
 # --- PRINCIPAL ---
@@ -76,9 +85,6 @@ st.write("\n")
 st.write("\n")
 st.write("\n")
 st.write("\n")
-st.write("\n")
-st.write("\n")
-st.write("\n")
 st.subheader("Experiencia y calificaciones.")
 
 st.write(
@@ -93,6 +99,9 @@ st.write(
 """
 )
 
+st.write("\n")
+st.write("\n")
+st.write("\n")
 st.subheader("Hard skills.")
 st.write(
       """

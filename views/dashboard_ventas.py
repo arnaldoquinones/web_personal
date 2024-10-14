@@ -1,4 +1,4 @@
 # Importo librerias.
 import streamlit as st
 
-st.title("Catalogo de implementaciones.")
+st.image(r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\images\pag_en_construccion.png", width=690)
