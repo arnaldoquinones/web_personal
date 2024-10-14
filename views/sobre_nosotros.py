@@ -8,15 +8,22 @@ import streamlit as st
 WEBHOOK_URL = "https://hooks.pabbly.com/api/webhook/670c56b88df01fec66f88c3f"
 
 
-
 # --- Codigo validacion de mail ---
 def is_valid_email(email):
     email_pattern = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
     return re.match(email_pattern, email) is not None
 
+
+def reset_form():
+    first_name = ""
+    last_name = ""
+    email = ""
+    message = ""
+    st.session_state.form_visible = False
+
 @st.dialog("Contactame")
 def show_contact_form():
-    with st.form("contact_form"):
+    with st.form("contact_form",clear_on_submit=True):
         first_name = st.text_input("Nombre")
         last_name = st.text_input("Apellido")
         email = st.text_input("Email")
@@ -61,10 +68,10 @@ def show_contact_form():
                 # reset_form()
 
             # Restablecer los campos
-            first_name = ""
-            last_name = ""
-            email = ""
-            message = ""
+first_name = ""
+last_name = ""
+email = ""
+message = ""
             
 
 # --- PRINCIPAL ---
@@ -78,6 +85,8 @@ with col2:
         st.write("Con más de 24 años de experiencia en el Banco ICBC, he desempeñado roles tanto en el área administrativa como en el comercial.")
         if st.button("📧 Contactame"):
                 show_contact_form()
+                reset_form()
+
         
 # --- EXPERIENCIA Y CALIFICACIONES ---
 
