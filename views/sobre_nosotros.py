@@ -133,7 +133,7 @@ st.write(
 )
 
 st.write("\n")
-st.write("\n")
+st.markdown("W")
 st.write("\n")
 st.subheader("Hard skills.")
 st.write(
