@@ -10,9 +10,18 @@ page_bg_img = """
 }
 
 h1, h2, h3, h4, h5, h6, p, li, ul, ol, span {
-    color: #FFFFFF !important;  /* Fuerza el color blanco en todos los elementos de texto */
+    color: #FFFFFF !important;  /* Cambia el color del texto */
+    text-align: justify;  /* Justifica el texto */
 }
 
+[data-testid="stHeader"] {
+    background-color: rgba(0,0,0,0);
+}
+
+[data-testid="stText"] {
+    color: #FFFFFF !important;  /* Cambia el color del texto de cualquier otro componente de texto */
+    text-align: justify;  /* Justifica el texto */
+}
 </style>
 """
 
