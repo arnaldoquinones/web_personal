@@ -29,6 +29,6 @@ h1, h2, h3, h4, h5, h6, p, li, ul, ol, span {
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
-st.title("Bienvenidos a mi pagina de proyectos.")
+st.title("Proyectos.")
 
 st.image(r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\images\pag_en_construccion.png", width=690)
