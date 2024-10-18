@@ -3,6 +3,21 @@ import requests
 import re
 import streamlit as st
 
+page_bg_img = """
+<style>
+[data-testid="stAppViewContainer"] {
+    background: linear-gradient(135deg, #000000, #00008B);
+}
+
+h1, h2, h3, h4, h5, h6, p, li, ul, ol, span {
+    color: #FFFFFF !important;  /* Fuerza el color blanco en todos los elementos de texto */
+}
+
+</style>
+"""
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 # --- POP UP WINDOW ---
 
 WEBHOOK_URL = "https://hooks.pabbly.com/api/webhook/670c56b88df01fec66f88c3f"
@@ -78,7 +93,7 @@ message = ""
 col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
 
 with col1:
-        st.image(r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\images\frente.png", width=230)
+        st.image(r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\images\portada.png", width=230)
 
 with col2:
         st.title("Arnaldo Quiñones", anchor=False)
