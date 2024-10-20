@@ -35,6 +35,24 @@ h1, h2, h3, h4, h5, h6, p, li, ul, ol, span {
 """
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
+st.markdown("""
+<style>
+div.stButton > button:first-child {
+    background-color: #000066; /* Azul más oscuro */
+    color: #ffffff; /* Texto blanco */
+    border: 1px solid #ffffff; /* Bordes blancos, grosor de 1 píxel */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el efecto 3D */
+    transition: all 0.3s ease; /* Suaviza el efecto al hacer hover */
+}
+div.stButton > button:hover {
+    background-color: #00004d; /* Un tono aún más oscuro al hacer hover */
+    color: #ffffff; /* Texto blanco */
+    border: 1px solid #ffffff; /* Bordes blancos en hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Aumenta la sombra al hacer hover para el efecto 3D */
+    transform: translateY(-2px); /* Mueve el botón hacia arriba al hacer hover */
+}
+</style>
+""", unsafe_allow_html=True)
 
 # --- POP UP WINDOW ---
 
@@ -142,7 +160,11 @@ st.write(
 )
 
 st.write("\n")
-st.markdown("W")
+st.markdown(""" 
+            
+---
+            
+   """)
 st.write("\n")
 st.subheader("Hard skills.")
 st.write(

@@ -31,15 +31,16 @@ project_2_page = st.Page(
 # --- NAVIGATION SETUP [WITH SECTIONS]---
 pg = st.navigation(
     {
-        "Info": [main_page],
-        "Projects": [about_page, project_1_page, project_2_page],
+        
+        "": [main_page,about_page, project_1_page, project_2_page],
     }
 )
 
 
 # --- SHARED ON ALL PAGES ---
-st.logo(r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\images\mendieta.jpg")
-st.sidebar.markdown("Made by [Arnaldo Quiñones.](https://github.com/arnaldoquinones)")
+st.logo(r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\images\menu.png")
+st.sidebar.markdown('Made by&nbsp;<a href="https://github.com/arnaldoquinones" target="_blank">Arnaldo Quiñones.</a>', unsafe_allow_html=True)
+
 
 
 # --- RUN NAVIGATION ---
