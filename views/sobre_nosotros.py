@@ -2,6 +2,10 @@
 import requests
 import re
 import streamlit as st
+import base64
+import streamlit as st
+import plotly.express as px
+
 
 page_bg_img = """
 <style>
@@ -18,6 +22,11 @@ h1, h2, h3, h4, h5, h6, p, li, ul, ol, span {
     background-color: rgba(0,0,0,0);
 }
 
+[data-testid="stSidebar"] > div:first-child {
+    background: linear-gradient(135deg, #000000, #00008B);  /* Fondo del sidebar */
+}
+
+
 [data-testid="stText"] {
     color: #FFFFFF !important;  /* Cambia el color del texto de cualquier otro componente de texto */
     text-align: justify;  /* Justifica el texto */
@@ -29,7 +38,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # --- POP UP WINDOW ---
 
-WEBHOOK_URL = "https://hooks.pabbly.com/api/webhook/670c56b88df01fec66f88c3f"
+WEBHOOK_URL = ("https://hooks.pabbly.com/api/webhook/670c56b88df01fec66f88c3f")
 
 
 # --- Codigo validacion de mail ---

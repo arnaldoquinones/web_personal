@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5, h6, p, li, ul, ol, span {
     background-color: rgba(0,0,0,0);
 }
 
+[data-testid="stSidebar"] > div:first-child {
+    background: linear-gradient(135deg, #000000, #00008B);  /* Fondo del sidebar */
+}
+
 [data-testid="stText"] {
     color: #FFFFFF !important;  /* Cambia el color del texto de cualquier otro componente de texto */
     text-align: justify;  /* Justifica el texto */

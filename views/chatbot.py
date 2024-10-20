@@ -16,10 +16,9 @@ h1, h2, h3, h4, h5, h6, p, li, ul, ol, span {
     background-color: rgba(0,0,0,0);
 }
 
-/* [data-testid="stSidebar"] {
-    background-image:
-    background-size:cover;
-    }  */
+[data-testid="stSidebar"] > div:first-child {
+    background: linear-gradient(135deg, #000000, #00008B);  /* Fondo del sidebar */
+}
 
 [data-testid="stText"] {
     color: #FFFFFF !important;  /* Cambia el color del texto de cualquier otro componente de texto */
@@ -29,5 +28,6 @@ h1, h2, h3, h4, h5, h6, p, li, ul, ol, span {
 """
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
+st.markdown("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium nunc et dui dignissim, at fauccmksdsmañdckamsdñ")
 
 st.image(r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\images\pag_en_construccion.png", width=690)
