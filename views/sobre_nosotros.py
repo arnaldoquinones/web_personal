@@ -1,10 +1,12 @@
-# sobre_nosotros.
+# Importo librerias.
+
 import requests
 import re
 import streamlit as st
 import base64
 import streamlit as st
 import plotly.express as px
+
 
 
 page_bg_img = """
@@ -53,6 +55,7 @@ div.stButton > button:hover {
 }
 </style>
 """, unsafe_allow_html=True)
+
 
 # --- POP UP WINDOW ---
 
