@@ -12,6 +12,7 @@ def is_valid_email(email):
     return re.match(email_pattern, email) is not None
 
 
+
 def contact_form():
     with st.form("contact_form"):
         name = st.text_input("First Name")
