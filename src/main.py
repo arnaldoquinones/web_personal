@@ -3,7 +3,14 @@ import streamlit as st
 # import fastapi as fastAPI
 # from forms.contact import contact_form
 
-
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 # --- PAGE SETUP ---
 pag_principal = st.Page(
 r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\web_personal\src\skills.py",
