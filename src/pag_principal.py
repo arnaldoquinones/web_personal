@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6, p, li, ul, ol, span {
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
-st.title("Proyectos.")
+st.title("Ambitos de estudio.")
 
 st.write("\n")
 st.write("\n")

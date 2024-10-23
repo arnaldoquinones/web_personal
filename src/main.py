@@ -19,7 +19,7 @@ skills = st.Page(
 )
 proyectos = st.Page(
     r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\web_personal\src\proyectos.py",
-    title="Catalogo de implementaciones.",
+    title="Proyectos.",
     icon="🌟",
 )
 chatbot = st.Page(
