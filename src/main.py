@@ -6,13 +6,13 @@ import streamlit as st
 
 # --- PAGE SETUP ---
 pag_principal = st.Page(
-r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\web_personal\src\pag_principal.py",
+r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\web_personal\src\skills.py",
     title="Pagina principal.",
     icon="🌟",
     default=True,
 )
 skills = st.Page(
-    r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\web_personal\src\skills.py",
+    r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\web_personal\src\pag_principal.py",
     title="Resumen curricular.",
     icon="🌟",
     
