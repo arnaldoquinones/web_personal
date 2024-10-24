@@ -38,8 +38,16 @@ st.write("\n")
 st.write("\n")
 st.write("\n")
 
+st.image(r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\web_personal\media\d_scientist.png", width=690)
+
+st.write("\n")
+st.write("\n")
+st.write("\n")
+st.write("\n")
 
 st.subheader("Data Engineering.")
+
+
 st.write(
       """Cuento con una sólida trayectoria en Data Engineering, respaldada por más de 24 años de experiencia en el sector bancario y un enfoque técnico orientado al análisis de datos y la optimización de procesos. A lo largo de mi carrera, he trabajado extensamente en la implementación de pipelines de datos, modelos de machine learning y soluciones de Business Intelligence, aplicando técnicas avanzadas de ETL, SQL, y herramientas como MySQL, Google Cloud, Docker, y Git. Mi experiencia incluye proyectos clave en los que he sido responsable de la ingesta, tratamiento y modelado de grandes volúmenes de datos, garantizando la integridad y eficiencia del flujo de datos en entornos productivos. He utilizado Snowflake y MicroStrategy para transformar datos en información valiosa, facilitando la toma de decisiones estratégicas en empresas del ámbito financiero. Mi enfoque en la automatización de procesos y la escalabilidad de soluciones ha contribuido a la mejora de la operativa de datos, impactando de manera positiva en los resultados de negocio.
 
@@ -81,11 +89,5 @@ Mi principal fortaleza en el análisis de datos es mi capacidad para identificar
 En uno de mis proyectos más recientes, participé en el análisis de datos para un estudio de mercado sobre la colocación de restaurantes en Estados Unidos, donde utilicé modelos estadísticos para proporcionar recomendaciones que optimizaron la ubicación y el rendimiento de los establecimientos. Mi habilidad para integrar fuentes de datos dispares y aplicar técnicas de visualización me ha permitido comunicar resultados de manera clara y efectiva a diferentes audiencias, tanto técnicas como no técnicas.
 
 Además de mi habilidad técnica, me considero una persona analítica, meticulosa y orientada a resultados, capaz de traducir necesidades empresariales en soluciones basadas en datos. Mi experiencia en la limpieza y transformación de datos, junto con mi capacidad para trabajar de manera colaborativa en equipos multidisciplinarios, ha sido clave en el éxito de los proyectos en los que he participado. Estoy siempre dispuesto a aprender nuevas tecnologías y metodologías para seguir aplicando análisis de datos avanzados que generen valor tangible para las organizaciones.
-"""
+    """
 )
-# st.markdown("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium nunc et dui dignissim, at faucibus lacus efficitur. Fusce vulputate, libero a tincidunt finibus, erat felis ullamcorper magna, a lobortis nunc quam at arcu. Ut fermentum nunc non viverra hendrerit. Aliquam erat volutpat. Sed gravida eros nec odio auctor, sit amet faucibus mauris varius. Nulla facilisi. Phasellus vitae justo nec magna scelerisque condimentum.
-
-# ---
-
-# Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium nunc et dui dignissim, at faucibus lacus efficitur. Fusce vulputate, libero a tincidunt finibus, erat felis ullamcorper magna, a lobortis nunc quam at arcu. Ut fermentum nunc non viverra hendrerit. Aliquam erat volutpat. Sed gravida eros nec odio auctor, sit amet faucibus mauris varius. Nulla facilisi. Phasellus vitae justo nec magna scelerisque condimentum. """)
-# # st.image(r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\proyecto\images\pag_en_construccion.png", width=690)

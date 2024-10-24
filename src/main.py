@@ -3,23 +3,27 @@ import streamlit as st
 # import fastapi as fastAPI
 # from forms.contact import contact_form
 
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
+# --- PAGE FEATURE ---
+
+# hide_st_style = """
+#             <style>
+#             #MainMenu {visibility: hidden;}
+#             footer {visibility: hidden;}
+#             header {visibility: hidden;}
+#             </style>
+#             """
+# st.markdown(hide_st_style, unsafe_allow_html=True)
+
 # --- PAGE SETUP ---
-pag_principal = st.Page(
-r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\web_personal\src\skills.py",
+
+pagina_principal = st.Page(
+r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\web_personal\src\pagina_principal.py",
     title="Pagina principal.",
     icon="🌟",
     default=True,
 )
-skills = st.Page(
-    r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\web_personal\src\pag_principal.py",
+resumen_curricular = st.Page(
+    r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\web_personal\src\resumen_curricular.py",
     title="Resumen curricular.",
     icon="🌟",
     
@@ -39,7 +43,7 @@ chatbot = st.Page(
 pg = st.navigation(
     {
         
-        "": [pag_principal,skills, proyectos, chatbot],
+        "": [pagina_principal,resumen_curricular, proyectos, chatbot],
     }
 )
 
