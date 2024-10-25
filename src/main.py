@@ -17,10 +17,10 @@ import streamlit as st
 # --- PAGE SETUP ---
 
 pagina_principal = st.Page(
-    "src/pagina_principal.py",
+    r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\web_personal\src\pagina_principal.py",
     title="Pagina principal.",
     icon="🌟",
-    default=True,
+    
 )
 
 resumen_curricular = st.Page(
