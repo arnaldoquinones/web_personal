@@ -15,6 +15,7 @@ import streamlit as st
 # st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # --- PAGE SETUP ---
+base_path = "."
 
 pagina_principal = st.Page(
     "src/pagina_principal.py",
