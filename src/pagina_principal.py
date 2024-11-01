@@ -5,6 +5,7 @@ import re
 import streamlit as st
 import base64
 import plotly.express as px
+import os
 
 # --- PAGE FITURE ---
 
@@ -128,10 +129,15 @@ message = ""
             
 
 # --- PRINCIPAL ---
+
+# --- 
+base_path = os.path.dirname(__file__)
+menu_image_path = os.path.join(base_path, "..", "media", "portada.png")
+
 col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
 
 with col1:
-        st.image(r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\web_personal\media\portada.png", width=230)
+        st.image(menu_image_path, width=230)
 
 with col2:
         st.title("Arnaldo Quiñones", anchor=False)

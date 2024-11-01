@@ -1,6 +1,7 @@
 # Chatbot.py
 
 import streamlit as st
+import os
 
 # CSS para cambiar el color de fondo y de todo el texto.
 
@@ -33,10 +34,10 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 st.title("Ambitos de estudio.")
 
-# st.write("\n")
-# st.write("\n")
-# st.write("\n")
-# st.write("\n")
+st.write("\n")
+st.write("\n")
+st.write("\n")
+st.write("\n")
 
 # st.image(r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\web_personal\media\d_scientist.png", width=690)
 
@@ -95,12 +96,17 @@ st.title("Ambitos de estudio.")
 # st.write("\n")
 # st.write("\n")
 # st.write("\n")
+# --- RUTAS RELATIVAS ---
+base_path = os.path.dirname(__file__)
+menu_engineer_path = os.path.join(base_path, "..", "media", "engineer.png")
+menu_scientist_path = os.path.join(base_path, "..", "media", "scientist.png")
+menu_analyst_path = os.path.join(base_path, "..", "media", "analyst.png")
 
 st.subheader("Data Engineering.")
 col1, col2 = st.columns(2, gap="small", vertical_alignment="top")
 
 with col1:
-        st.image(r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\web_personal\media\engineer.png", width=330)
+        st.image(menu_engineer_path, width=330)
 
 with col2:
         st.write("""A lo largo de mi carrera, he trabajado en el desarrollo de modelos predictivos, análisis de datos y proyectos complejos de machine learning, aplicando soluciones que han generado un impacto directo en la toma de decisiones estratégicas y operativas.
@@ -129,7 +135,7 @@ Mi enfoque principal ha sido la creación de modelos avanzados de machine learni
         
 
 with col2:
-        st.image(r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\web_personal\media\scientist.png", width=330)
+        st.image(menu_scientist_path, width=330)
 
 st.markdown(""" 
             
@@ -140,7 +146,7 @@ st.subheader("Data Analyst.")
 col1, col2 = st.columns(2, gap="small", vertical_alignment="top")
 
 with col1:
-        st.image(r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\web_personal\media\analyst.png", width=330)
+        st.image(menu_analyst_path, width=330)
 
 with col2:
         st.write("""A lo largo de mi carrera, he trabajado en el desarrollo de modelos predictivos, análisis de datos y proyectos complejos de machine learning, aplicando soluciones que han generado un impacto directo en la toma de decisiones estratégicas y operativas.

@@ -16,9 +16,9 @@ import os
 # st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # --- PAGE SETUP ---
-base_path = "."
 
-base_path = "."  # Define tu directorio base
+base_path = os.path.dirname(__file__)  # Define tu directorio base
+menu_image_path = os.path.join(base_path, "..", "media", "menu.png")
 
 pagina_principal = st.Page(
     os.path.join(base_path, "pagina_principal.py"),
@@ -55,7 +55,7 @@ pg = st.navigation(
 
 
 # --- SHARED ON ALL PAGES ---
-st.logo(r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\web_personal\media\menu.png")
+st.logo(menu_image_path)
 st.sidebar.markdown('Made by&nbsp;<a href="https://github.com/arnaldoquinones" target="_blank">Arnaldo Quiñones.</a>', unsafe_allow_html=True)
 
 

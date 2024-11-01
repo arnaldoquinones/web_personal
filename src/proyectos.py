@@ -1,5 +1,6 @@
 # Importo librerias.
 import streamlit as st
+import os
 
 # CSS para cambiar el color de fondo y de todo el texto
 page_bg_img = """
@@ -27,7 +28,10 @@ h1, h2, h3, h4, h5, h6, p, li, ul, ol, span {
 }
 </style>
 """
-# 
+
+# --- RUTAS RELATIVAS ---
+base_path = os.path.dirname(__file__)
+menu_pagconstruccion_path = os.path.join(base_path, "..", "media", "pag_en_construccion.png")
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
@@ -38,4 +42,4 @@ st.write("\n")
 st.write("\n")
 st.write("\n")
 
-st.image(r"D:\Users\Arnaldo\Desktop\SISTEMAS\practicas\practicas_apis\FASTAPI\web_personal\media\pag_en_construccion.png", width=690)
+st.image(menu_pagconstruccion_path, width=690)
