@@ -6,7 +6,7 @@ import streamlit as st
 import base64
 import plotly.express as px
 
-
+# --- PAGE FITURE ---
 
 page_bg_img = """
 <style>
