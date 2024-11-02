@@ -58,7 +58,7 @@ pg = st.navigation(
 
 
 # --- SHARED ON ALL PAGES ---
-st.logo(logo_path)
+
 st.sidebar.markdown('Made by&nbsp;<a href="https://github.com/arnaldoquinones" target="_blank">Arnaldo Quiñones.</a>', unsafe_allow_html=True)
 
 
