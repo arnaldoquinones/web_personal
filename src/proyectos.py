@@ -30,8 +30,6 @@ h1, h2, h3, h4, h5, h6, p, li, ul, ol, span {
 """
 
 # --- RUTAS RELATIVAS ---
-# base_path = os.path.dirname(__file__)
-# menu_pagconstruccion_path = os.path.join(base_path, "..", "media", "pag_en_construccion.png")
 pag_en_construccion_path = "../media/pag_en_construccion.png"
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
