@@ -1,7 +1,7 @@
 # Chatbot.py
 
 import streamlit as st
-import os
+
 
 # CSS para cambiar el color de fondo y de todo el texto.
 
@@ -97,16 +97,16 @@ st.write("\n")
 # st.write("\n")
 # st.write("\n")
 # --- RUTAS RELATIVAS ---
-base_path = os.path.dirname(__file__)
-menu_engineer_path = os.path.join(base_path, "..", "media", "engineer.png")
-menu_scientist_path = os.path.join(base_path, "..", "media", "scientist.png")
-menu_analyst_path = os.path.join(base_path, "..", "media", "analyst.png")
+
+engineer_path = "../media/engineer.png"
+scientist_path = "../media/scientist.png"
+analyst_path = "../media/analyst.png"
 
 st.subheader("Data Engineering.")
 col1, col2 = st.columns(2, gap="small", vertical_alignment="top")
 
 with col1:
-        st.image(menu_engineer_path, width=330)
+        st.image(engineer_path, width=330)
 
 with col2:
         st.write("""A lo largo de mi carrera, he trabajado en el desarrollo de modelos predictivos, análisis de datos y proyectos complejos de machine learning, aplicando soluciones que han generado un impacto directo en la toma de decisiones estratégicas y operativas.
@@ -135,7 +135,7 @@ Mi enfoque principal ha sido la creación de modelos avanzados de machine learni
         
 
 with col2:
-        st.image(menu_scientist_path, width=330)
+        st.image(scientist_path, width=330)
 
 st.markdown(""" 
             
@@ -146,7 +146,7 @@ st.subheader("Data Analyst.")
 col1, col2 = st.columns(2, gap="small", vertical_alignment="top")
 
 with col1:
-        st.image(menu_analyst_path, width=330)
+        st.image(analyst_path, width=330)
 
 with col2:
         st.write("""A lo largo de mi carrera, he trabajado en el desarrollo de modelos predictivos, análisis de datos y proyectos complejos de machine learning, aplicando soluciones que han generado un impacto directo en la toma de decisiones estratégicas y operativas.

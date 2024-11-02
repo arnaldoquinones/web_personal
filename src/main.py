@@ -1,6 +1,5 @@
 # Importo librerias.
 import streamlit as st
-import os
 # import fastapi as fastAPI
 # from forms.contact import contact_form
 
@@ -17,29 +16,33 @@ import os
 
 # --- PAGE SETUP ---
 
-base_path = os.path.dirname(__file__)  # Define tu directorio base
-menu_image_path = os.path.join(base_path, "..", "media", "menu.png")
+pagina_principal_path = "pagina_principal.py"
+resumen_curricular_path = "resumen_curricular.py"
+chatbot_path = "chatbot.py"
+proyectos_path = "proyectos.py"
+logo_path = "../media/menu.png"
+
 
 pagina_principal = st.Page(
-    os.path.join(base_path, "pagina_principal.py"),
+    pagina_principal_path,
     title="Pagina principal.",
     icon="🌟",
 )
 
 resumen_curricular = st.Page(
-    os.path.join(base_path, "resumen_curricular.py"),
+    resumen_curricular_path,
     title="Resumen curricular.",
     icon="🌟",
 )
 
 proyectos = st.Page(
-    os.path.join(base_path, "proyectos.py"),
+    proyectos_path,
     title="Proyectos.",
     icon="🌟",
 )
 
 chatbot = st.Page(
-    os.path.join(base_path, "chatbot.py"),
+    chatbot_path,
     title="Chat Bot.",
     icon="🌟",
 )
@@ -55,7 +58,7 @@ pg = st.navigation(
 
 
 # --- SHARED ON ALL PAGES ---
-st.logo(menu_image_path)
+st.logo(logo_path)
 st.sidebar.markdown('Made by&nbsp;<a href="https://github.com/arnaldoquinones" target="_blank">Arnaldo Quiñones.</a>', unsafe_allow_html=True)
 
 
