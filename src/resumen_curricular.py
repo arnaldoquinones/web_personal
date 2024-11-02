@@ -98,9 +98,9 @@ st.write("\n")
 # st.write("\n")
 # --- RUTAS RELATIVAS ---
 
-engineer_path = "../media/engineer.png"
-scientist_path = "../media/scientist.png"
-analyst_path = "../media/analyst.png"
+engineer_path = "./media/engineer.png"
+scientist_path = "./media/scientist.png"
+analyst_path = "./media/analyst.png"
 
 st.subheader("Data Engineering.")
 col1, col2 = st.columns(2, gap="small", vertical_alignment="top")

@@ -1,7 +1,5 @@
 # Importo librerias.
 import streamlit as st
-# import fastapi as fastAPI
-# from forms.contact import contact_form
 
 # --- PAGE FEATURE ---
 

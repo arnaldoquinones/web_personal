@@ -132,7 +132,7 @@ message = ""
 
 # --- 
 
-portada_path = "../media/portada.png"
+portada_path = "./media/portada.png"
 
 col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
 
