@@ -3,14 +3,14 @@ import streamlit as st
 
 # --- PAGE FEATURE ---
 
-# hide_st_style = """
-#             <style>
-#             #MainMenu {visibility: hidden;}
-#             footer {visibility: hidden;}
-#             header {visibility: hidden;}
-#             </style>
-#             """
-# st.markdown(hide_st_style, unsafe_allow_html=True)
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # --- PAGE SETUP ---
 
@@ -18,7 +18,7 @@ pagina_principal_path = "pagina_principal.py"
 resumen_curricular_path = "resumen_curricular.py"
 chatbot_path = "chatbot.py"
 proyectos_path = "proyectos.py"
-logo_path = "../media/menu.png"
+
 
 
 pagina_principal = st.Page(

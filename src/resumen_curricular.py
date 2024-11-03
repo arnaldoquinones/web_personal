@@ -109,11 +109,9 @@ with col1:
         st.image(engineer_path, width=330)
 
 with col2:
-        st.write("""A lo largo de mi carrera, he trabajado en el desarrollo de modelos predictivos, análisis de datos y proyectos complejos de machine learning, aplicando soluciones que han generado un impacto directo en la toma de decisiones estratégicas y operativas.
-Mi enfoque principal ha sido la creación de modelos avanzados de machine learning, desde la fase de ingesta y tratamiento de datos hasta la evaluación y la implementación en entornos de producción altamente cambiantes y demandantes. A lo largo de mi carrera, he trabajado en el desarrollo de modelos predictivos, análisis de datos y proyectos complejos de machine learning.
+        st.write("""Cuento con  un enfoque técnico orientado al análisis de datos y la optimización de procesos. A lo largo de mi carrera, he trabajado extensamente en la implementación de pipelines de datos, modelos de machine learning y soluciones de Business Intelligence, aplicando técnicas avanzadas de ETL, SQL, y herramientas como MySQL, Google Cloud, Docker, y Git. Mi experiencia incluye proyectos clave en los que he sido responsable de la ingesta, tratamiento y modelado de grandes volúmenes de datos, garantizando la integridad y eficiencia del flujo de datos en entornos productivos.
 """)
-st.write("""A lo largo de mi carrera, he trabajado en el desarrollo de modelos predictivos, análisis de datos y proyectos complejos de machine learning, aplicando soluciones que han generado un impacto directo en la toma de decisiones estratégicas y operativas.
-Mi enfoque principal ha sido la creación de modelos avanzados de machine learning, desde la fase de ingesta y tratamiento de datos hasta la evaluación y la implementación en entornos de producción altamente cambiantes y demandantes. 
+st.write("""He utilizado Snowflake y MicroStrategy para transformar datos en información valiosa, facilitando la toma de decisiones estratégicas en empresas del ámbito financiero. Mi enfoque en la automatización de procesos y la escalabilidad de soluciones ha contribuido a la mejora de la operativa de datos, impactando de manera positiva en los resultados de negocio. 
 """)
 
 st.markdown(""" 
@@ -127,10 +125,12 @@ col1, col2 = st.columns(2, gap="small", vertical_alignment="top")
 
 with col1:
         st.write("""A lo largo de mi carrera, he trabajado en el desarrollo de modelos predictivos, análisis de datos y proyectos complejos de machine learning, aplicando soluciones que han generado un impacto directo en la toma de decisiones estratégicas y operativas.
-Mi enfoque principal ha sido la creación de modelos avanzados de machine learning, desde la fase de ingesta y tratamiento de datos hasta la evaluación y la implementación en entornos de producción altamente cambiantes y demandantes. A lo largo de mi carrera, he trabajado en el desarrollo de modelos predictivos, análisis de datos y proyectos complejos de machine learning.
+
+Mi enfoque principal ha sido la creación de modelos avanzados de machine learning, desde la fase de ingesta y tratamiento de datos hasta la evaluación y la implementación en entornos de producción. He utilizado herramientas como Python, Google Cloud, MySQL y Power BI.  
 """)
-st.write("""A lo largo de mi carrera, he trabajado en el desarrollo de modelos predictivos, análisis de datos y proyectos complejos de machine learning, aplicando soluciones que han generado un impacto directo en la toma de decisiones estratégicas y operativas.
-Mi enfoque principal ha sido la creación de modelos avanzados de machine learning, desde la fase de ingesta y tratamiento de datos hasta la evaluación y la implementación en entornos de producción altamente cambiantes y demandantes. 
+st.write("""Ademas he interactuado con frameworks como Snowflake y Docker, para diseñar pipelines de datos eficientes que permiten obtener insights valiosos y transformar datos crudos en información accionable. En mi experiencia más reciente, he liderado proyectos de análisis de datos en sectores como el financiero, en donde implementé soluciones de predicción de riesgos y optimización de procesos de negocio. En un proyecto de marketing para la colocación de restaurantes en Estados Unidos, desempeñé un papel clave en la construcción de modelos predictivos que ayudaron a identificar las mejores ubicaciones basadas en variables geográficas, demográficas y de consumo. Mi enfoque en la minería de datos y el análisis exploratorio me ha permitido desarrollar estrategias basadas en datos para resolver problemas complejos de negocio.
+
+Además de mis habilidades técnicas, también he colaborado en proyectos de BI y análisis estadístico, utilizando herramientas como Tableau y MicroStrategy, lo que me ha permitido comunicar insights de manera clara y efectiva a partes interesadas no técnicas. Mi experiencia en el manejo de grandes volúmenes de datos y mi capacidad para resolver problemas de manera analítica me han permitido adaptarme a desafíos dinámicos, trabajando en equipo y asegurando que los proyectos se completen con éxito.
 """)
         
 
